@@ -903,4 +903,51 @@ div.relative {
     }
 }
 
+
 /*make video   https://webdesign.tutsplus.com/tutorials/how-to-create-a-sticky-floating-video-on-page-scroll--cms-28342*/
+
+.content-media--video {
+    background-color: #ddd;
+    display: block;
+    position: relative;
+    padding: 0 0 56.25% 0;
+}
+
+.content-media--video iframe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/** Use .sticky */
+
+#featured-video.is-sticky {
+    position: fixed;
+    top: 15px;
+    left: auto;
+    max-width: 280px;
+    max-height: 158px;
+    width: 280px;
+    height: 158px;
+}
+
+@media screen and (min-width: 1120px) {
+    #featured-video.is-sticky {
+        transform: translateX(-80%);
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #featured-video.is-sticky {
+        transform: translateX(-115%);
+    }
+}
+
+#featured-video {
+    -webkit-transition: width .2s ease-in-out, height .2s ease-in-out, -webkit-transform .38s ease-in-out;
+    transition: width .2s ease-in-out, height .2s ease-in-out, -webkit-transform .38s ease-in-out;
+    transition: width .2s ease-in-out, height .2s ease-in-out, transform .38s ease-in-out;
+    transition: width .2s ease-in-out, height .2s ease-in-out, transform .38s ease-in-out, -webkit-transform .38s ease-in-out
+}

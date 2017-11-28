@@ -1,8 +1,9 @@
 
-$(document).ready(function(){
-	$('.click').click(function(){
+$(document).ready(function () {
+	$('.click').click(function () {
 		$('body').toggleClass('night');
 		$('.click').toggleClass('out');
 	})
 });
- 
+
+
