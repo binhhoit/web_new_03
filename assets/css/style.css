@@ -577,7 +577,7 @@ div.relative {
         margin: 0 auto;
     }
     .IG_1 {
-        width: 90%;
+        width: 100%;
         object-fit: contain;
     }
     .grid_div {
@@ -932,6 +932,29 @@ ul.dashed>li:before {
     background-clip: padding-box;
     border-radius: .3rem;
     outline: 0;
+}
+
+
+/*respone mobile  */
+
+@media (min-width: 0px) and (max-width:600px) {
+    .desktop_image {
+        display: none;
+    }
+    .mobile_image {
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 601px) {
+    .desktop_image {
+        display: block;
+    }
+    .mobile_image {
+        display: none;
+    }
 }
 
 
