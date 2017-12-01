@@ -923,6 +923,17 @@ ul.dashed>li:before {
     color: #000000
 }
 
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-clip: padding-box;
+    border-radius: .3rem;
+    outline: 0;
+}
+
 
 /*make video   https://webdesign.tutsplus.com/tutorials/how-to-create-a-sticky-floating-video-on-page-scroll--cms-28342*/
 
