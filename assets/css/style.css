@@ -920,7 +920,8 @@ ul.dashed>li:before {
 }
 
 .b_footer {
-    color: #000000
+    color: #000000;
+    font-size: 14px !important;
 }
 
 .modal-content {
